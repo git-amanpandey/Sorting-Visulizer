@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The_Great_Aman</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Sorting Visualizer</h1>
+  <div class="controls">
+    <label for="arraySize"><b>Array Size 👉</b></label>
+    <input type="number" id="arraySize" min="5" max="100" value="10">
+    <button onclick="generateArray()">Generate Array</button>
+    <label for="sortType"><b>Choose Sorting Algorithm 👉</b></label>
+    <select id="sortType">
+      <option value="bubble">Bubble Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="merge">Merge Sort</option>
+      <option value="quick">Quick Sort</option>
+    </select>
+    <button onclick="performSort()">Perform Sort</button>
+  </div>
+  <div class="array-container" id="arrayContainer">
+    <!-- Array elements will be dynamically created here -->
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
